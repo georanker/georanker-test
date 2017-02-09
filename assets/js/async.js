@@ -16,6 +16,7 @@
 
             $.get(url, req)
                 .done(function(res) {
+                    console.log(res);
                     var jsonData = JSON.parse(res);
                     
                     // show message
