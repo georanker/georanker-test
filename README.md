@@ -2,5 +2,5 @@
 Pre-employment test for GeoRanker
 
 This test will be made using these technologies below:
-- PHP (webscrapper logic)
+- PHP (sitemap.xml extraction logic)
 - jQuery (Ajax calls)
