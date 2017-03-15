@@ -17,10 +17,9 @@
             $.get(url, req)
                 .done(function(res) {
                     console.log(res);
-                    var jsonData = JSON.parse(res);
-                    
+
                     // show message
-                    window.alert(jsonData.message);
+                    window.alert(Number(res));
                     // form reset
                     $('#btn_count').removeAttr('disabled');
                     $('#btn_count').html('Count Again!');

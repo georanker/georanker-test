@@ -18,15 +18,14 @@ if (!empty($_GET)) {
             $urls[] = $base_url . $url;
     }
 
-    global $page_uris;
-    $page_uris = array();
+    $total_uri = array();
 
     foreach ($urls as $url) {
-        page_counter($url, $page_uris);
+      $total_uri[] = page_counter($url);
+
     }
 
-    $page_uris = array_unique($page_uris);
-    printf(sizeof($page_uris));
+    echo count(array_unique($total_uri[0]));
 
     // $sitemaps = simplexml_load_file($url);
 
